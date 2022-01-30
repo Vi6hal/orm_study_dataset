@@ -178,7 +178,7 @@ class Staff(models.Model):
     staff_id = models.AutoField(primary_key=True)
     first_name = models.TextField()
     last_name = models.TextField()
-    address = models.ForeignKey(Address, models.DO_NOTHING)
+    address = models.ForeignKey(Address, models.DO_NOTHING,)
     email = models.TextField(blank=True, null=True)
     store = models.ForeignKey('Store', models.DO_NOTHING)
     active = models.BooleanField()
